@@ -299,13 +299,13 @@ function dci_add_servizi_metaboxes() {
     /**  repeater fasi_scadenze **/
     $group_field_id = $cmb_tempi->add_field( array(
         'id'          => $prefix . 'scadenze',
-        //'name'        => __('Fasi' , 'design_scuole_italia' ),
+        //'name'        => __('Fasi' , 'design_comuni_italia' ),
         'type'        => 'group',
-        'description' => __( 'Aggiungi le fasi specifiche per questo servizio (è possibile specificare il numero di giorni)', 'design_scuole_italia' ),
+        'description' => __( 'Aggiungi le fasi specifiche per questo servizio (è possibile specificare il numero di giorni)', 'design_comuni_italia' ),
         'options'     => array(
-            'group_title'    => __( 'Fase {#}', 'design_scuole_italia' ), // {#} gets replaced by row number
-            'add_button'     => __( 'Aggiungi fase', 'design_scuole_italia' ),
-            'remove_button'  => __( 'Rimuovi', 'design_scuole_italia' ),
+            'group_title'    => __( 'Fase {#}', 'design_comuni_italia' ), // {#} gets replaced by row number
+            'add_button'     => __( 'Aggiungi fase', 'design_comuni_italia' ),
+            'remove_button'  => __( 'Rimuovi', 'design_comuni_italia' ),
             'sortable'       => true,
             'closed'      => true
         ),
@@ -318,7 +318,7 @@ function dci_add_servizi_metaboxes() {
     $cmb_tempi->add_group_field( $group_field_id,  array(
         'id'      => 'giorni',
         'name'    => __( 'Giorni', 'design_comuni_italia' ),
-        //'desc'    => __( 'giorni', 'design_scuole_italia' ),
+        //'desc'    => __( 'giorni', 'design_comuni_italia' ),
         'type' => 'text_small',
         'attributes' => array(
             'type' => 'number',
@@ -327,7 +327,7 @@ function dci_add_servizi_metaboxes() {
     $cmb_tempi->add_group_field( $group_field_id,  array(
         'id'      => 'descrizione',
         'name'    => __( 'Descrizione', 'design_comuni_italia' ),
-        //'desc'    => __( 'Descrizione', 'design_scuole_italia' ),
+        //'desc'    => __( 'Descrizione', 'design_comuni_italia' ),
         'type'             => 'textarea',
     ) );
     /*** fine repeater fasi e scadenze **/
